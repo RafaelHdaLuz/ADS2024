@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário de Evento</title>
+</head>
+<body>
+
+    <h1>Formulário de Inscrição no Evento</h1>
+
+    <section>
+        <h2>Informações Pessoais</h2>
+        <form action="#" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+            <br>
+            <br>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+            <br>
+            <br>
+            <label for="senha">Senha:</label>
+            <input type="password" id="senha" name="senha" required>
+            <br>
+            <br>
+            <label for="idade">Idade:</label>
+            <input type="number" id="idade" name="idade" required>
+            <br>
+            <br>
+            <label for="dataNascimento">Data de Nascimento:</label>
+            <input type="date" id="dataNascimento" name="dataNascimento" required>
+            <br>
+            <br>
+            <input type="submit" value="Enviar Informações Pessoais">
+        </form>
+    </section>
+
+    <section>
+        <h2>Preferências do Evento</h2>
+        <form action="#" method="post">
+            <label for="temasInteresse">Temas de Interesse:</label>
+            <br>
+            <select id="temasInteresse" name="temasInteresse" multiple>
+                <option value="tecnologia">Tecnologia</option>
+                <option value="saude">Saúde</option>
+                <option value="arte">Arte</option>
+            </select>
+
+            <br>
+            <br>
+
+            <label>Aulas:</label>
+            <br>
+            <label for="workshop1">Aula 1</label>
+            <input type="checkbox" id="workshop1" name="workshop1">
+
+            <br>
+
+            <label for="workshop2">Aula 2</label>
+            <input type="checkbox" id="workshop2" name="workshop2">
+
+
+            <br>
+            <input type="submit" value="Enviar Preferências do Evento">
+        </form>
+    </section>
+
+    <section>
+        <h2>Submissão de Apresentação</h2>
+        <form action="#" method="post">
+            <label for="tituloApresentacao">Título da Apresentação:</label>
+            <input type="text" id="tituloApresentacao" name="tituloApresentacao" required>
+
+            <br>
+            <br>
+
+            <label for="resumoApresentacao">Resumo da Apresentação:</label>
+            <br>
+            <textarea id="resumoApresentacao" name="resumoApresentacao" rows="4" required></textarea>
+            
+            <br>
+            <br>
+
+            <label for="anexoApresentacao">Anexo de Arquivo:</label>
+            <input type="file" id="anexoApresentacao" name="anexoApresentacao" accept=".pdf,.doc,.docx" required>
+
+            <br>
+            <br>
+            <input type="submit" value="Enviar Apresentação">
+        </form>
+    </section>
+
+</body>
+</html>
